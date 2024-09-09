@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		15C1C48D2C8F934E00652B16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C1C48C2C8F934E00652B16 /* AppDelegate.swift */; };
 		15C1C48F2C8F934E00652B16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C1C48E2C8F934E00652B16 /* SceneDelegate.swift */; };
-		15C1C4912C8F934E00652B16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C1C4902C8F934E00652B16 /* ViewController.swift */; };
-		15C1C4942C8F934E00652B16 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 15C1C4932C8F934E00652B16 /* Base */; };
+		15C1C4912C8F934E00652B16 /* ColorBlenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C1C4902C8F934E00652B16 /* ColorBlenderViewController.swift */; };
 		15C1C4962C8F934F00652B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C1C4952C8F934F00652B16 /* Assets.xcassets */; };
 		15C1C4992C8F934F00652B16 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 15C1C4982C8F934F00652B16 /* Base */; };
 /* End PBXBuildFile section */
@@ -19,8 +18,7 @@
 		15C1C4892C8F934E00652B16 /* ColorBlender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorBlender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C1C48C2C8F934E00652B16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15C1C48E2C8F934E00652B16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		15C1C4902C8F934E00652B16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		15C1C4932C8F934E00652B16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15C1C4902C8F934E00652B16 /* ColorBlenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBlenderViewController.swift; sourceTree = "<group>"; };
 		15C1C4952C8F934F00652B16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15C1C4982C8F934F00652B16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15C1C49A2C8F934F00652B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,8 +56,7 @@
 			children = (
 				15C1C48C2C8F934E00652B16 /* AppDelegate.swift */,
 				15C1C48E2C8F934E00652B16 /* SceneDelegate.swift */,
-				15C1C4902C8F934E00652B16 /* ViewController.swift */,
-				15C1C4922C8F934E00652B16 /* Main.storyboard */,
+				15C1C4902C8F934E00652B16 /* ColorBlenderViewController.swift */,
 				15C1C4952C8F934F00652B16 /* Assets.xcassets */,
 				15C1C4972C8F934F00652B16 /* LaunchScreen.storyboard */,
 				15C1C49A2C8F934F00652B16 /* Info.plist */,
@@ -127,7 +124,6 @@
 			files = (
 				15C1C4962C8F934F00652B16 /* Assets.xcassets in Resources */,
 				15C1C4992C8F934F00652B16 /* Base in Resources */,
-				15C1C4942C8F934E00652B16 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15C1C4912C8F934E00652B16 /* ViewController.swift in Sources */,
+				15C1C4912C8F934E00652B16 /* ColorBlenderViewController.swift in Sources */,
 				15C1C48D2C8F934E00652B16 /* AppDelegate.swift in Sources */,
 				15C1C48F2C8F934E00652B16 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +143,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		15C1C4922C8F934E00652B16 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				15C1C4932C8F934E00652B16 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		15C1C4972C8F934F00652B16 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +285,6 @@
 				INFOPLIST_FILE = ColorBlender/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,9 +294,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.igorguryan.ColorBlender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,7 +316,6 @@
 				INFOPLIST_FILE = ColorBlender/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,9 +325,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.igorguryan.ColorBlender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
