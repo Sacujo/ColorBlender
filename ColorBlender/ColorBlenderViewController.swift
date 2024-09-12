@@ -36,6 +36,7 @@ class ColorBlenderViewController: UIViewController {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.distribution = .equalSpacing
+        stackView.spacing = 10
         return stackView
     }()
     
@@ -49,6 +50,7 @@ class ColorBlenderViewController: UIViewController {
     lazy var thirdColourPickerStack: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
+        stackView.spacing = 10
         stackView.distribution = .equalSpacing
         return stackView
     }()
@@ -80,6 +82,31 @@ class ColorBlenderViewController: UIViewController {
         return label
     }()
     
+    lazy var firstColorNameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Result Color"
+        label.textAlignment = .center
+        return label
+    }()
+    lazy var secondColorNameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Result Color"
+        label.textAlignment = .center
+        return label
+    }()
+    lazy var thirdColorNameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Result Color"
+        label.textAlignment = .center
+        return label
+    }()
+    lazy var fourthColorNameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Result Color"
+        label.textAlignment = .center
+        return label
+    }()
+    
     lazy var resultColorView: UIView = {
         let view = UIView()
         view.backgroundColor = .green
@@ -100,10 +127,18 @@ class ColorBlenderViewController: UIViewController {
         view.addSubview(topPickerStackView)
         view.addSubview(bottomPickerStackView)
         view.addSubview(resultColorStack)
-        topPickerStackView.addArrangedSubview(firstColorPickerButton)
-        topPickerStackView.addArrangedSubview(secondColorPickerButton)
-        bottomPickerStackView.addArrangedSubview(thirdColorPickerButton)
-        bottomPickerStackView.addArrangedSubview(fourthColorPickerButton)
+        firstColourPickerStack.addArrangedSubview(firstColorPickerButton)
+        firstColourPickerStack.addArrangedSubview(firstColorNameLabel)
+        secondColourPickerStack.addArrangedSubview(secondColorPickerButton)
+        secondColourPickerStack.addArrangedSubview(secondColorNameLabel)
+        thirdColourPickerStack.addArrangedSubview(thirdColorPickerButton)
+        thirdColourPickerStack.addArrangedSubview(thirdColorNameLabel)
+        fourthColourPickerStack.addArrangedSubview(fourthColorPickerButton)
+        fourthColourPickerStack.addArrangedSubview(fourthColorNameLabel)
+        topPickerStackView.addArrangedSubview(firstColourPickerStack)
+        topPickerStackView.addArrangedSubview(secondColourPickerStack)
+        bottomPickerStackView.addArrangedSubview(thirdColourPickerStack)
+        bottomPickerStackView.addArrangedSubview(fourthColourPickerStack)
         resultColorStack.addArrangedSubview(resultColorView)
         resultColorStack.addArrangedSubview(resultColorNameLabel)
     }
@@ -126,7 +161,7 @@ class ColorBlenderViewController: UIViewController {
         
         resultColorStack.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(bottomPickerStackView.snp.bottom).offset(50)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(20)
         }
         
         [
