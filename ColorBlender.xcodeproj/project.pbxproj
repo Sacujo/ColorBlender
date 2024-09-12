@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151AEDD82C938593001ED4EB /* UIButton + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151AEDD72C938593001ED4EB /* UIButton + ext.swift */; };
 		15C1C48D2C8F934E00652B16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C1C48C2C8F934E00652B16 /* AppDelegate.swift */; };
 		15C1C48F2C8F934E00652B16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C1C48E2C8F934E00652B16 /* SceneDelegate.swift */; };
 		15C1C4912C8F934E00652B16 /* ColorBlenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C1C4902C8F934E00652B16 /* ColorBlenderViewController.swift */; };
 		15C1C4962C8F934F00652B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C1C4952C8F934F00652B16 /* Assets.xcassets */; };
 		15C1C4992C8F934F00652B16 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 15C1C4982C8F934F00652B16 /* Base */; };
+		15C1C4A22C8F967F00652B16 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 15C1C4A12C8F967F00652B16 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151AEDD72C938593001ED4EB /* UIButton + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + ext.swift"; sourceTree = "<group>"; };
 		15C1C4892C8F934E00652B16 /* ColorBlender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorBlender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C1C48C2C8F934E00652B16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15C1C48E2C8F934E00652B16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C1C4A22C8F967F00652B16 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +64,7 @@
 				15C1C4952C8F934F00652B16 /* Assets.xcassets */,
 				15C1C4972C8F934F00652B16 /* LaunchScreen.storyboard */,
 				15C1C49A2C8F934F00652B16 /* Info.plist */,
+				151AEDD72C938593001ED4EB /* UIButton + ext.swift */,
 			);
 			path = ColorBlender;
 			sourceTree = "<group>";
@@ -80,6 +85,9 @@
 			dependencies = (
 			);
 			name = ColorBlender;
+			packageProductDependencies = (
+				15C1C4A12C8F967F00652B16 /* SnapKit */,
+			);
 			productName = ColorBlender;
 			productReference = 15C1C4892C8F934E00652B16 /* ColorBlender.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 15C1C4802C8F934E00652B16;
+			packageReferences = (
+				15C1C4A02C8F967F00652B16 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 15C1C48A2C8F934E00652B16 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15C1C4912C8F934E00652B16 /* ColorBlenderViewController.swift in Sources */,
+				151AEDD82C938593001ED4EB /* UIButton + ext.swift in Sources */,
 				15C1C48D2C8F934E00652B16 /* AppDelegate.swift in Sources */,
 				15C1C48F2C8F934E00652B16 /* SceneDelegate.swift in Sources */,
 			);
@@ -357,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		15C1C4A02C8F967F00652B16 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15C1C4A12C8F967F00652B16 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15C1C4A02C8F967F00652B16 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15C1C4812C8F934E00652B16 /* Project object */;
 }
