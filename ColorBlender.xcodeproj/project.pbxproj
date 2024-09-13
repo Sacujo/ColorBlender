@@ -54,6 +54,48 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
+		151AEDE02C944546001ED4EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				151AEDDE2C943DB1001ED4EB /* ModelColor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		151AEDE12C944550001ED4EB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				151AEDDC2C943D84001ED4EB /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		151AEDE22C94455E001ED4EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				15C1C4902C8F934E00652B16 /* ColorBlenderViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		151AEDE32C944578001ED4EB /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				15C1C48C2C8F934E00652B16 /* AppDelegate.swift */,
+				15C1C48E2C8F934E00652B16 /* SceneDelegate.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		151AEDE42C94458F001ED4EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15C1C4952C8F934F00652B16 /* Assets.xcassets */,
+				15C1C49A2C8F934F00652B16 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		15C1C4802C8F934E00652B16 = {
 			isa = PBXGroup;
 			children = (
@@ -73,15 +115,13 @@
 		15C1C48B2C8F934E00652B16 /* ColorBlender */ = {
 			isa = PBXGroup;
 			children = (
-				15C1C48C2C8F934E00652B16 /* AppDelegate.swift */,
-				15C1C48E2C8F934E00652B16 /* SceneDelegate.swift */,
-				15C1C4902C8F934E00652B16 /* ColorBlenderViewController.swift */,
-				151AEDDC2C943D84001ED4EB /* NetworkManager.swift */,
-				151AEDDE2C943DB1001ED4EB /* ModelColor.swift */,
+				151AEDE32C944578001ED4EB /* Applications */,
+				151AEDE22C94455E001ED4EB /* Controllers */,
+				151AEDE12C944550001ED4EB /* Services */,
+				151AEDE02C944546001ED4EB /* Model */,
 				151AEDDB2C943B4C001ED4EB /* Extentions */,
-				15C1C4952C8F934F00652B16 /* Assets.xcassets */,
+				151AEDE42C94458F001ED4EB /* Resources */,
 				15C1C4972C8F934F00652B16 /* LaunchScreen.storyboard */,
-				15C1C49A2C8F934F00652B16 /* Info.plist */,
 			);
 			path = ColorBlender;
 			sourceTree = "<group>";

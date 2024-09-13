@@ -119,7 +119,6 @@ final class ColorBlenderViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.backgroundColor = .yellow
         setupView()
         setupLayout()
         
@@ -214,7 +213,6 @@ final class ColorBlenderViewController: UIViewController {
     }
     
     func setupView() {
-        view.backgroundColor = .clear
         view.addSubview(appNameLabel)
         view.addSubview(topPickerStackView)
         view.addSubview(bottomPickerStackView)
