@@ -11,6 +11,7 @@ extension UIButton {
     static func createColorPickerButton() -> UIButton{
         let button = UIButton()
         button.backgroundColor = .red
+        button.layer.cornerRadius =  20
         return button
     }
 }
